@@ -1,0 +1,56 @@
+body {
+    margin: 1em;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+details {
+    background-color: #bbb;
+}
+
+summary:hover {
+    background-color: #999;
+}
+
+ul, p {
+    margin: 0;
+    padding: 0 0 0 1.5em;
+}
+
+div.contents {
+    border: 1px solid white;
+}
+
+p.label {
+    font-weight: bold;
+    font-style: italic;
+    color: #03b;
+}
+
+ul {
+    list-style: none;
+}
+
+p.error {
+    color: #b00;
+}
+
+.empty > summary::marker {
+    color: #0000;
+}
+
+summary > a {
+    padding-left: 0.5em;
+    font-family: serif;
+    font-size: 50%;
+    text-decoration: none;
+    color: #03b;
+}
+
+summary > a:hover {
+    text-decoration: underline;
+}
+
+summary:not(:hover) > a {
+    display: none;
+}
